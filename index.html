@@ -3,10 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width= , initial-scale=1.0" />
-    <title>Document</title>
+    <title>محفظتي الذكية</title>
   </head>
   <body>
-    <h3>This is Web App v1</h3>
-    <p>this is test change in code</p>
+    <div class="wallet-container">
+      <h1>محفظتي الرقمية</h1>
+
+      <!-- التعامل مع جدول الرصيد -->
+      <div class="balance-section">
+        <h3>الرصيد الحالي</h3>
+        <div id="balance">0</div>
+      </div>
+
+      <!-- ازرار التحكم -->
+      <div class="balance-buttons">
+        <input type="number" id="amount-input" placeholder="ادخل المبلغ" />
+        <div class="control-buttons">
+          <button id="btn-income" class="btn-in">ايداع</button>
+
+          <button id="btn-expense" class="btn-out">مصروف</button>
+        </div>
+      </div>
+
+      <div class="history-section"></div>
+      <h3>سجل العلميات</h3>
+      <ul id="history-list"></ul>
+
+      <script src="app.js"></script>
+    </div>
   </body>
 </html>
